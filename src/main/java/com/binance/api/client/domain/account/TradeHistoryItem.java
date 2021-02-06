@@ -25,7 +25,12 @@ public class TradeHistoryItem {
      */
     private String qty;
 
-    /**
+	/**
+	 * Quote quantity.
+	 */
+	private String quoteQty;
+
+	/**
      * Trade execution time.
      */
     private long time;
@@ -66,7 +71,15 @@ public class TradeHistoryItem {
         this.qty = qty;
     }
 
-    public long getTime() {
+	public String getQuoteQty() {
+		return quoteQty;
+	}
+
+	public void setQuoteQty(String quoteQty) {
+		this.quoteQty = quoteQty;
+	}
+
+	public long getTime() {
         return time;
     }
 

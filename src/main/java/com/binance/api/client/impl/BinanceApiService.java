@@ -45,7 +45,7 @@ public interface BinanceApiService {
     Call<List<TradeHistoryItem>> getTrades(@Query("symbol") String symbol, @Query("limit") Integer limit);
 
     @Headers(BinanceApiConstants.ENDPOINT_SECURITY_TYPE_APIKEY_HEADER)
-    @GET("/api/v1/historicalTrades")
+    @GET("/api/v3/historicalTrades")
     Call<List<TradeHistoryItem>> getHistoricalTrades(@Query("symbol") String symbol, @Query("limit") Integer limit, @Query("fromId") Long fromId);
 
     @GET("/api/v1/aggTrades")
